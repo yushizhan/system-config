@@ -1,0 +1,13 @@
+[user]
+    name = yushizhan
+    email = 
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    st = status
+    co = checkout
+    doc = commit -m 'update docs'
+    ws = rebase --whitespace=fix
+[push]
+	default = matching
+[core]
+	editor = /usr/bin/vim
