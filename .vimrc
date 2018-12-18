@@ -13,7 +13,7 @@ set backspace=2
 set mouse=a
 set noswapfile
 set t_Co=256
-colorscheme molokai
+colorscheme peaksea
 set guifont=Monaco:h13
 "colorscheme desert
 "colorscheme github
