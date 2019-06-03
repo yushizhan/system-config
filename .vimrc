@@ -79,6 +79,8 @@ map <F3> :cp<CR>
 " jump to next building error
 map <F4> :cn<CR>
 
+noremap <C-x><C-f> :Ex<CR>
+
 
 map <F6> :Tlist<CR>
 vmap sy :w !pbcopy<CR><CR>
@@ -99,30 +101,33 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Plugin 'valloric/youcompleteme'
 Plugin 'AutoComplPop'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 
+" TagBar
 
-""" Plugin配置
+
+
+"" Taglist
 let Tlist_Show_One_File = 1 
 let Tlist_Exit_OnlyWindow = 1 
 let Tlist_Use_Right_Window = 1
 
+" NERDTreeToggle
 map <LEADER>t :NERDTreeToggle<CR>
-noremap <C-x><C-f> :Ex<CR>
 
-" produce tags
-" map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-map <F10> :!ctags --python-kinds=-i -o `pwd`/.tags  -R `pwd` <CR>
-
-let g:vim_markdown_folding_disabled=1
-
+" ACP
 " let g:acp_enableAtStartup = 0
 
-" 禁止使用jedi
+" Jedi
 "let g:jedi#auto_initialization = 0
 " 禁止弹出上面的提示, 如果需要文档，可以按K
 " autocmd FileType python setlocal completeopt-=preview
 " let g:jedi#popup_select_first=1
 
+" Ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
