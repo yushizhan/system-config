@@ -107,20 +107,12 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 
-" TagBar
-
-
-
-"" Taglist
-let Tlist_Show_One_File = 1 
-let Tlist_Exit_OnlyWindow = 1 
-let Tlist_Use_Right_Window = 1
-
-" NERDTreeToggle
-map <LEADER>t :NERDTreeToggle<CR>
+" TagBar && NERDTreeToggle
+map <LEADER>n :NERDTreeToggle<CR>
+map <LEADER>t :TagbarToggle<CR>
 
 " ACP
-" let g:acp_enableAtStartup = 0
+let g:acp_enableAtStartup = 0
 
 " Jedi
 "let g:jedi#auto_initialization = 0
